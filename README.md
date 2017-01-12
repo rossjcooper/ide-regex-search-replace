@@ -1,17 +1,20 @@
 # IDE Regex Search and Replace Cheatsheet
 
-##PHP Shorthand Echo to Blade Echo
+##Echo
+
 Replaces instances of `<?= $variable ?>` with blade's `{{ $variable }}` template syntax.
 
 **Search:** `\<\?\=(.*)\?\>`
 
 **Replace:** `\{\{$1\}\}`
 
-##PHP Foreach to Blade Foreach
+##Foreach
+
 Replaces typical foreach blocks
+
 ```php
  <?php foreach($list as $item): ?>
- //...	
+  //...	
  <?php endforeach; ?>
 ```
 
