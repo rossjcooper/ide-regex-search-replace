@@ -35,3 +35,22 @@ for
 **Search:** `\<\?php endforeach\; \?\>`
 
 **Replace** `\@endforeach`
+
+##Errors
+
+This is more for me to swap outputting errors to use my custom @error() directive.
+
+```php
+ {{$errors->first('name')}}
+```
+
+for
+
+```php
+ @error('name')
+```
+
+**Search:** `\{\{ \$errors\-\>first\(\'(.*)\'\) \}\}`
+
+**Replace:** `\@error\(\'$1\'\)`
+
